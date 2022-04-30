@@ -1,0 +1,81 @@
+.team-title {
+    margin-bottom: 50px;
+}
+
+.team-section {
+    background-color: var(--team-background-color);
+}
+
+.team {
+    display: flex;
+}
+
+.team__item {
+    box-shadow: var(--team-list-shadow);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.team__photo {
+    display: block;
+}
+
+.team__container {
+    background-color: var(--main-contrast-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team__name {
+    color: var(--header-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team__prof {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.team-link {
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.team-link__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-link__link {
+    color: var(--icon-color);
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: block;
+    display: flex;
+
+    transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--main-contrast-color);
+        background-color: var(--main-active-color);
+    }
+}
+
+.team-link__icon {
+    fill: currentColor;
+    margin: auto auto;
+}

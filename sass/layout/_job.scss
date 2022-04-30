@@ -1,0 +1,43 @@
+.job-section {
+    padding-top: 0;
+}
+
+.job-title {
+    margin-bottom: 50px;
+}
+
+.job {
+    display: flex;
+}
+
+.job__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.job__image {
+    display: block;
+}
+
+.job__container {
+    position: relative;
+}
+
+.job__overlay {
+    position: absolute;
+    width: 370px;
+    bottom: 0;
+    left: 0;
+}
+
+.job__text {
+    color: var(--main-contrast-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background-color: var(--job-list-color);
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
