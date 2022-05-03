@@ -1,35 +1,88 @@
-.benefits {
-    display: flex;
-}
 
 .benefits__item:not(:last-child) {
-    margin-right: 30px;
-}
-
+        margin-bottom: 30px;
+    }
 .benefits__title {
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: left;
-    text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
 
-    margin-bottom: 10px;
-}
+        margin-bottom: 10px;
+    }
 
-.benefits__text {
-    font-size: 14px;
-    line-height: 1.7;
-}
-
+    .benefits__text {
+            font-size: 14px;
+            line-height: 1.7;
+        }
 .benefits__wrapper {
-    width: 270px;
-    height: 120px;
-    background: #f5f4fa;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
+        width: 450px;
+        height: 120px;
+        background: #f5f4fa;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .benefits__icon {
+        margin: auto auto;
+    }
+
+    // Планшетна версія
+
+@media screen and (min-width: 768px){
+    .benefits__title{
+        text-align: left;
+    }
+    .benefits__wrapper{
+        width: 354px;
+    }
+
+    .benefits {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .benefits__item{
+            margin-left: 15px;
+            margin-top: 15px;
+        }
 }
 
-.benefits__icon {
-    margin: auto auto;
-}
+
+// .benefits {
+//     display: flex;
+// }
+
+// .benefits__item:not(:last-child) {
+//     margin-right: 30px;
+// }
+
+// .benefits__title {
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-align: left;
+//     text-transform: uppercase;
+
+//     margin-bottom: 10px;
+// }
+
+// .benefits__text {
+//     font-size: 14px;
+//     line-height: 1.7;
+// }
+
+// .benefits__wrapper {
+//     width: 270px;
+//     height: 120px;
+//     background: #f5f4fa;
+//     border-radius: 4px;
+//     margin-bottom: 30px;
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .benefits__icon {
+//     margin: auto auto;
+// }
