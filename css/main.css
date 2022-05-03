@@ -550,10 +550,32 @@ img {
   .benefits {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -15px;
+    margin-top: -15px;
   }
   .benefits__item {
+    flex-basis: calc(100%/2 - 15px);
     margin-left: 15px;
     margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits {
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+  .benefits__item {
+    margin: 0;
+  }
+  .benefits__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .benefits__title {
+    text-align: left;
+  }
+  .benefits__wrapper {
+    width: 270px;
   }
 }
 
