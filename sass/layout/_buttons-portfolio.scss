@@ -1,36 +1,81 @@
-.buttons-port {
-    display: block;
-    display: flex;
-    justify-content: center;
+.section-port{
+    padding-bottom: 40px;
+}
 
-    margin-top: 0;
-    margin-bottom: 50px;
-    padding-left: 0;
+.container-port{
+    margin: 0;
+}
+
+.buttons-port {
+        display: block;
+        display: flex;
+       flex-wrap: wrap;
+        
+
+        margin-top: 0;
+        margin-bottom: 50px;
+        padding-left: 0;
 }
 
 .buttons-port__item:not(:last-child) {
-    margin-right: 8px;
-}
-
-.buttons-port__btn {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    letter-spacing: 0.03em;
-    background: var(--team-background-color);
-    border-color: transparent;
-    border-radius: 4px;
-    padding: 6px 22px;
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-        color: var(--main-contrast-color);
-        background-color: var(--main-active-color);
-        box-shadow: var(--button-portfolio-shadow);
+        margin-right: 8px;
     }
 
-}
+.buttons-port__btn {
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        letter-spacing: 0.03em;
+        background: var(--team-background-color);
+        border-color: transparent;
+        border-radius: 4px;
+        padding: 6px 22px;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            color: var(--main-contrast-color);
+            background-color: var(--main-active-color);
+            box-shadow: var(--button-portfolio-shadow);
+        }
+
+    }
+
+
+// .buttons-port {
+//     display: block;
+//     display: flex;
+//     justify-content: center;
+
+//     margin-top: 0;
+//     margin-bottom: 50px;
+//     padding-left: 0;
+// }
+
+// .buttons-port__item:not(:last-child) {
+//     margin-right: 8px;
+// }
+
+// .buttons-port__btn {
+//     font-family: inherit;
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.63;
+//     letter-spacing: 0.03em;
+//     background: var(--team-background-color);
+//     border-color: transparent;
+//     border-radius: 4px;
+//     padding: 6px 22px;
+//     cursor: pointer;
+
+//     &:hover,
+//     &:focus {
+//         color: var(--main-contrast-color);
+//         background-color: var(--main-active-color);
+//         box-shadow: var(--button-portfolio-shadow);
+//     }
+
+// }
 
 

@@ -1001,6 +1001,7 @@ img {
     display: flex;
     flex-direction: row;
     text-align: left;
+    align-items: flex-start;
   }
   .address-container {
     margin-right: 70px;
@@ -1013,9 +1014,8 @@ img {
     text-align: left;
   }
   .subscribe-container {
-    display: block;
-    flex-direction: row;
     margin-left: 93px;
+    margin-top: 12px;
   }
   .subscribe-wrapper {
     display: flex;
@@ -1026,13 +1026,22 @@ img {
   }
   .user-email-wrapper__input {
     margin-right: 12px;
+    width: 358px;
   }
+}
+
+.section-port {
+  padding-bottom: 40px;
+}
+
+.container-port {
+  margin: 0;
 }
 
 .buttons-port {
   display: block;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 50px;
   padding-left: 0;
