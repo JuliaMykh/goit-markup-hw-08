@@ -1,27 +1,5 @@
-.portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-
-    margin-bottom: 0;
-    margin-top: 0;
-    padding: 0;
-
-    margin-left: -30px;
-    margin-top: -30px;
-}
-
-.portfolio-list__item {
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc(100% / 3 - 30px);
-
-    &:hover {
-        box-shadow: var(--portfolio-cards-shadow);
-    }
-}
-
 .card-set__content {
-    padding: 20px 24px;
+    padding: 20px 20px;
     border-bottom: 1px solid var(--border-color-card);
     border-left: 1px solid var(--border-color-card);
     border-right: 1px solid var(--border-color-card);
@@ -42,16 +20,16 @@
     line-height: 1.88;
 }
 
-.card-set__img {
-    display: block;
+.portfolio-list__item:not(:last-child){
+    margin-bottom: 30px;
 }
 
-.overlay {
+.overlay-p {
     position: relative;
     overflow: hidden;
 }
 
-.overlay__container {
+.overlay-p__container {
     position: absolute;
     opacity: 1;
     top: 0;
@@ -66,22 +44,61 @@
     .tehnocrak:hover & {
         transform: translateY(0%);
     }
-    
+
     .card-set__link:focus & {
         transform: translateY(0%);
     }
 }
 
-.overlay__content {
+.overlay-p__content {
     position: absolute;
     top: 0;
     left: 0;
     padding: 63px 24px;
 }
 
-.overlay__text {
+.overlay-p__text {
     color: var(--main-contrast-color);
     font-size: 18px;
     line-height: 1.6;
     letter-spacing: 0.03em;
 }
+
+// Планшетна версія
+
+@media screen and (min-width: 768px){
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.portfolio-list__item:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.portfolio-list__item {
+        margin-left: 30px;
+        margin-top: 30px;
+        flex-basis: calc(100% / 2 - 30px);
+
+        &:hover {
+            box-shadow: var(--portfolio-cards-shadow);
+        }
+    }
+
+}
+
+// Десктопна версія
+
+@media screen and (min-width: 1200px){
+    
+.portfolio-list__item{
+    flex-basis: calc(100% / 3 - 30px);
+}
+
+}
+
+
+
