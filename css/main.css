@@ -541,16 +541,8 @@ img {
   }
 }
 
-.benefits {
-  width: 100%;
-}
-
-.benefits__item {
-  width: 100%;
-}
-
 .benefits__wrapper {
-  width: 100%;
+  width: 450px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
