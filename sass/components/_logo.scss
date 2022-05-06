@@ -2,8 +2,23 @@
     color: var(--main-active-color);
     font-family: raleway, sans-serif;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
+
+    display: block;
+    margin-bottom: 20px;
+} 
+  
+.logo--header{
+    display: block;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
+    .logo{
+        font-size: 28px;
+        line-height: 1.19;
+    }
 }
 
 .logo__dark {
@@ -14,8 +29,3 @@
     color: var(--main-contrast-color);
 }
 
-.logo--mobile {
-    font-size: 24px;
-    line-height: 1.17;
-    
-}

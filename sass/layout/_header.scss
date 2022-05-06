@@ -25,7 +25,7 @@
         left: 0;
         width: 100%;
         height: 100vh;
-        overflow: auto;
+        overflow: scroll;
     
         background-color: var(--main-contrast-color);
     
@@ -176,8 +176,8 @@
     }
 
 .header {
-        background-color: var(--main-contrast-color);
-        border-bottom: 1px solid var(--border-color);
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
 .header__nav{
@@ -250,13 +250,22 @@
             color: var(--main-active-color);
         }
      }
+    .contacts__link--envelope {
+        display: block;
+        padding-top: 20px;
+    }
     
+    .contacts__link--smartphone {
+        display: block;
+        padding-bottom: 20px;
+    }
+
     .contacts__link--envelope,
     .contacts__link--smartphone {
         display: flex;
         align-items: center;
     }
-
+    
     .contacts__icon--envelope {
             margin-right: 8px;
             fill: currentColor;
@@ -279,6 +288,7 @@
 // Десктопна версія
 
 @media screen and (min-width: 1200px){
+    
 
 .site-nav {
     margin-left: 93px;
@@ -335,6 +345,7 @@
     display: flex;
     align-items: center;
 }
+
 
 .contacts__icon--envelope {
     margin-right: 10px;

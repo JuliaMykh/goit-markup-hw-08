@@ -1,12 +1,3 @@
-@media screen and (max-width: 479px) {
-
-    .signup-form{
-        width: 100%;
-    }
-    .user-email-wrapper__input{
-        width: 100%;
-    }
-}
 
 
 .footer {
@@ -21,8 +12,8 @@
     text-align: center;
 }
 
+
 .address {
-     margin-top: 20px;
      margin-bottom: 9px;
  }
 
@@ -117,15 +108,18 @@
         display: block;
         flex-direction: column;
         align-items: center;
+        width: 100%;
 }
 
 .subscribe-wrapper {
         margin-top: 20px;
+        width: 100%;
 }
 
 .user-email-wrapper {
         display: flex;
         flex-direction: column;
+        width: 100%;
 }
 
     .user-email-wrapper__icon {
@@ -136,7 +130,7 @@
  }
 
     .user-email-wrapper__input {
-        width: 450px;
+        width: 100%;
         height: 50px;
         border: 1px solid var(--user-mail-input-border);
         box-sizing: border-box;
@@ -169,15 +163,31 @@
         margin-left: auto;
 }
 
+@media screen and (min-width: 480px){
+.user-email-wrapper__input {
+    width: 450px;
+}
+}
+
 // Планшетна версія
 
 @media screen and (min-width: 768px){
     .container-tablet{
         display: flex;
         flex-direction: row;
+        margin-bottom: 60px;
     }
     .address-container{
         margin-right: 165px;
+        margin-bottom: 0;
+    }
+    .social-net-container{
+        margin-bottom: 0;
+    }
+
+    .subscribe-wrapper{
+        display: flex;
+        justify-content: center;
     }
 
 }
@@ -190,7 +200,10 @@
             display: flex;
             flex-direction: row;
             text-align: left;
-            align-items: center;
+           align-items: flex-start;
+        }
+        .container-tablet{
+            margin-bottom: 0;
         }
 
         .address-container{
@@ -210,12 +223,12 @@
                   
         .subscribe-container {
            margin-left: 93px;
-        //    margin-top: 12px;
-           
+           margin-top: 12px;
         }
     
         .subscribe-wrapper {
             display: flex;
+            justify-content: flex-start;
         }
     
         .user-email-wrapper {
