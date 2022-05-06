@@ -1,10 +1,11 @@
 // Мобільна версія
 .hero {
-        padding-top: 118px;
-        padding-bottom: 118px;
-        text-align: center;
-    }
-.hero-title{
+    padding-top: 118px;
+    padding-bottom: 118px;
+    text-align: center;
+}
+
+.hero-title {
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 26px;
@@ -13,61 +14,62 @@
     text-transform: uppercase;
     color: var(--main-contrast-color);
 
-   }
+}
 
 .overlay {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/overlay-mob.jpg');
+    background-color: var(--dark-background-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .overlay {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/overlay-mob2x.jpg');
+    }
+}
+
+// Планшетна версія
+
+@media screen and (min-width: 768px) {
+    .overlay {
         max-width: 768px;
-        margin-left: auto;
-        margin-right: auto;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url('../images/overlay-mob.jpg');
-        background-color: var(--dark-background-color);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .overlay {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/overlay-mob2x.jpg');
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/overlay-tab2x.jpg');
         }
     }
-
-    // Планшетна версія
-
-@media screen and (min-width: 768px){
-        .overlay {
-            max-width: 768px;
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('../images/overlay-mob.jpg');
-        }
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .overlay {
-                background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url('../images/overlay-tab2x.jpg');
-            }
-        }            
 }
 
-    // Десктопна версія
+// Десктопна версія
 @media screen and (min-width: 1200px) {
     .hero {
-         padding-top: 200px;
-         padding-bottom: 200px;
-     }
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 
     .hero-title {
         font-size: 44px;
-        line-height: 1.36;                           
+        line-height: 1.36;
     }
 
     .overlay {
         max-width: 1600px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/overlay-mob.jpg');
+            url('../images/overlay-mob.jpg');
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -76,5 +78,7 @@
         .overlay {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/overlay-2x.jpg');
         }
-    }  
+    }
 }
+
+

@@ -1,5 +1,3 @@
-
-
 .clients-section {
     background-color: var(--main-contrast-color);
 }
@@ -26,8 +24,8 @@
 
 .clients__link {
     display: block;
-    
-    
+
+
 
     width: 210px;
     height: 92px;
@@ -38,7 +36,7 @@
     cursor: pointer;
     transition: border 250ms var(--timing-function), color 250ms var(--timing-function);
 
-    
+
 
     &:hover,
     &:focus {
@@ -105,3 +103,5 @@
 
 
 }
+
+
