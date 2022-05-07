@@ -17,15 +17,25 @@
 }
 
 .clients__item {
-    flex-basis: calc(100%/2 - 60px);
+    flex-basis: calc(100%/2-30px);
     margin-left: 30px;
     margin-top: 30px;
+    
+}
+
+.clients__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+    display: flex;
 }
 
 .clients__link {
     display: block;
-
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
     width: 210px;
     height: 92px;
@@ -36,8 +46,6 @@
     cursor: pointer;
     transition: border 250ms var(--timing-function), color 250ms var(--timing-function);
 
-
-
     &:hover,
     &:focus {
         border: 1px solid var(--main-active-color);
@@ -46,27 +54,22 @@
 
 }
 
-.clients__icon {
-    fill: currentColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 // Планшетна версія
 
 @media screen and (min-width: 768px) {
     .clients__item {
-        flex-basis: calc(100%/3 - 15px);
+        flex-basis: calc(100%/3 - 30px);
     }
 
     .clients__link {
         width: 226px;
     }
 
-    .clients__icon {
-        width: 226px;
-    }
+    // .clients__icon {
+    //     width: 226px;
+    // }
 }
 
 
