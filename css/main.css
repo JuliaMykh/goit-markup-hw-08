@@ -200,7 +200,7 @@ img {
     fill: var(--main-active-color);
   }
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
