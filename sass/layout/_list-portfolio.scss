@@ -77,6 +77,12 @@
     letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 767.99px) and (max-width: 1199.99px){
+    .card-set__content--grow{
+        padding-bottom: 56px;
+    }
+}
+
 // Планшетна версія
 
 @media screen and (min-width: 767.99px){
