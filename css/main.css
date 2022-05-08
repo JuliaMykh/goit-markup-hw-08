@@ -204,6 +204,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 767px;
     height: 100vh;
     overflow: scroll;
     background-color: var(--main-contrast-color);
@@ -274,7 +275,7 @@ img {
   }
   .mobile-contacts__link--tel {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 7vw;
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--main-active-color);
@@ -283,6 +284,7 @@ img {
   }
   .mobile-net {
     display: flex;
+    flex-wrap: wrap;
   }
   .mobile-net__item {
     border-right: 1px solid var(--mobile-net-item-border);
@@ -320,7 +322,7 @@ img {
   align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.98px) {
   .burger-btn {
     display: none;
   }
@@ -420,7 +422,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.99px) {
   .site-nav {
     margin-left: 93px;
   }
@@ -665,8 +667,13 @@ img {
 }
 
 .job__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 370px;
+  height: 70px;
+  background-color: var(--job-list-color);
   bottom: 0;
   left: 0;
 }
@@ -679,9 +686,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  background-color: var(--job-list-color);
-  padding-top: 27px;
-  padding-bottom: 27px;
 }
 
 .team-section {
@@ -1041,14 +1045,15 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.99px) {
   .container-tablet {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
     margin-bottom: 60px;
   }
   .address-container {
-    margin-right: 165px;
     margin-bottom: 0;
   }
   .social-net-container {
@@ -1066,6 +1071,7 @@ img {
     flex-direction: row;
     text-align: left;
     align-items: flex-start;
+    align-items: baseline;
   }
   .container-tablet {
     margin-bottom: 0;

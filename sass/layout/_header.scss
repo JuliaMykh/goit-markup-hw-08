@@ -24,6 +24,7 @@
         top: 0;
         left: 0;
         width: 100%;
+        max-width: 767px;
         height: 100vh;
         overflow: scroll;
     
@@ -110,7 +111,7 @@
 
     .mobile-contacts__link--tel {
         font-weight: 500;
-        font-size: 34px;
+        font-size: 7vw;
         line-height: 1.18;
         letter-spacing: 0.02em;
         color: var(--main-active-color);
@@ -121,6 +122,7 @@
 
     .mobile-net{
         display: flex;
+        flex-wrap: wrap;
     }
 
     .mobile-net__item{
@@ -148,6 +150,7 @@
    
 }
 
+
 // Мобільна версія
 
 .header {
@@ -167,7 +170,7 @@
 
 // Планшетна версія
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 767.98px){
     .burger-btn{
         display: none;
     }
@@ -287,7 +290,7 @@
 
 // Десктопна версія
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1199.99px){
     
 
 .site-nav {

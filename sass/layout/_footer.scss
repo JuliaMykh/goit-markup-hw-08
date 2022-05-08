@@ -171,24 +171,24 @@
 
 // Планшетна версія
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 767.99px){
     .container-tablet{
         display: flex;
         flex-direction: row;
-
+        align-items: baseline;
+        justify-content: space-between;
 
         margin-bottom: 60px;
     }
     .address-container{
-        
-        margin-right: 165px;
         margin-bottom: 0;
+        // margin-right: 165px;
 
 
     }
     .social-net-container{
-        
         margin-bottom: 0;
+           
     }
 
     .subscribe-wrapper{
@@ -207,6 +207,7 @@
             flex-direction: row;
             text-align: left;
            align-items: flex-start;
+           align-items: baseline;
         }
         .container-tablet{
             margin-bottom: 0;

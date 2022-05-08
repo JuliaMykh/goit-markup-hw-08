@@ -29,8 +29,15 @@
 }
 
 .job__overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
     position: absolute;
     width: 370px;
+    height: 70px;
+    background-color: var(--job-list-color);
     bottom: 0;
     left: 0;
 }
@@ -43,7 +50,5 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    background-color: var(--job-list-color);
-    padding-top: 27px;
-    padding-bottom: 27px;
+    
 }
