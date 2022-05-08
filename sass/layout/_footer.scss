@@ -18,10 +18,12 @@
 
 .address-container {
     margin-bottom: 60px;
+    width: 231px;
 
 }
 
 .address__link {
+   
     color: var(--main-contrast-color);
     font-size: 14px;
     line-height: 1.7;
@@ -215,6 +217,7 @@
 
     .container-tablet {
         margin-bottom: 0;
+       
     }
 
     .address-container {
@@ -223,18 +226,13 @@
     }
 
     .social-net-container {
-        margin-top: 12px;
+        margin-right: 93px;
         margin-bottom: 0;
     }
 
     .social-net-container__slogan,
     .subscribe-container__slogan {
         text-align: left;
-    }
-
-    .subscribe-container {
-        margin-left: 93px;
-        margin-top: 12px;
     }
 
     .subscribe-wrapper {
@@ -249,6 +247,7 @@
 
     .user-email-wrapper__input {
         margin-right: 12px;
+        margin-bottom: 0;
         width: 358px;
     }
 

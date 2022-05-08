@@ -311,6 +311,10 @@
 
 }
 
+.site-nav__link--current {
+    color: var(--main-active-color);
+}
+
 .contacts {
     display: flex;
     padding-left: 0;

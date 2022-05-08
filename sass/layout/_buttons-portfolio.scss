@@ -43,6 +43,14 @@
         }
 
     }
+
+        .buttons-port__btn--current{
+            color: var(--main-contrast-color);
+                background-color: var(--main-active-color);
+                box-shadow: var(--button-portfolio-shadow);
+        }
+
+
 // Планшетна і десктопна версія
 
 @media screen and (min-width: 768px){

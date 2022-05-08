@@ -437,6 +437,9 @@ img {
     letter-spacing: 0.02em;
     transition: background-color 250ms var(--timing-function);
   }
+  .site-nav__link--current {
+    color: var(--main-active-color);
+  }
   .contacts {
     display: flex;
     padding-left: 0;
@@ -656,10 +659,6 @@ img {
 
 .job__item:not(:last-child) {
   margin-right: 30px;
-}
-
-.job__image {
-  display: block;
 }
 
 .job__container {
@@ -906,6 +905,7 @@ img {
 
 .address-container {
   margin-bottom: 60px;
+  width: 231px;
 }
 
 .address__link {
@@ -1083,16 +1083,12 @@ img {
     margin-bottom: 0;
   }
   .social-net-container {
-    margin-top: 12px;
+    margin-right: 93px;
     margin-bottom: 0;
   }
   .social-net-container__slogan,
   .subscribe-container__slogan {
     text-align: left;
-  }
-  .subscribe-container {
-    margin-left: 93px;
-    margin-top: 12px;
   }
   .subscribe-wrapper {
     display: flex;
@@ -1104,6 +1100,7 @@ img {
   }
   .user-email-wrapper__input {
     margin-right: 12px;
+    margin-bottom: 0;
     width: 358px;
   }
 }
@@ -1145,6 +1142,12 @@ img {
 }
 
 .buttons-port__btn:hover, .buttons-port__btn:focus {
+  color: var(--main-contrast-color);
+  background-color: var(--main-active-color);
+  box-shadow: var(--button-portfolio-shadow);
+}
+
+.buttons-port__btn--current {
   color: var(--main-contrast-color);
   background-color: var(--main-active-color);
   box-shadow: var(--button-portfolio-shadow);
