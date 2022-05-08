@@ -753,6 +753,8 @@ img {
   cursor: pointer;
   display: block;
   display: flex;
+  justify-content: center;
+  align-items: center;
   transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 
@@ -763,7 +765,6 @@ img {
 
 .team-link__icon {
   fill: currentColor;
-  margin: auto auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -970,6 +971,8 @@ img {
   cursor: pointer;
   display: block;
   display: flex;
+  justify-content: center;
+  align-items: center;
   transition: background-color 250ms var(--timing-function);
 }
 
@@ -979,7 +982,6 @@ img {
 
 .social-net__icon {
   fill: var(--main-contrast-color);
-  margin: auto auto;
 }
 
 .subscribe-container {

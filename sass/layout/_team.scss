@@ -63,6 +63,8 @@
         cursor: pointer;
         display: block;
         display: flex;
+        justify-content: center;
+        align-items: center;
 
         transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
 
@@ -75,7 +77,7 @@
 
 .team-link__icon {
         fill: currentColor;
-        margin: auto auto;
+        // margin: auto auto;
 }
 
 // Планшетна версія

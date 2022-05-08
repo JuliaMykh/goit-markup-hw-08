@@ -1,10 +1,9 @@
-
-
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--dark-background-color);
 }
+
 .footer__container {
     display: flex;
     flex-direction: column;
@@ -14,18 +13,18 @@
 
 
 .address {
-     margin-bottom: 9px;
- }
+    margin-bottom: 9px;
+}
 
- .address-container{
-     margin-bottom: 60px;
-    
- }
+.address-container {
+    margin-bottom: 60px;
+
+}
 
 .address__link {
     color: var(--main-contrast-color);
-     font-size: 14px;
-     line-height: 1.7;
+    font-size: 14px;
+    line-height: 1.7;
 
     transition: color 250ms var(--timing-function);
 
@@ -42,137 +41,139 @@
 
     transition: color 250ms var(--timing-function);
 
-        &:hover,
-        &:focus {
-            color: var(--main-active-color);
-        }
+    &:hover,
+    &:focus {
+        color: var(--main-active-color);
+    }
 }
 
 .address-contacts__link--first {
-        display: inline-block;
-        margin-bottom: 9px;
-    }
+    display: inline-block;
+    margin-bottom: 9px;
+}
 
 .social-net-container {
-        display: block;
-        margin-bottom: 60px;
+    display: block;
+    margin-bottom: 60px;
 }
 
-    .social-net-container__slogan,
-    .subscribe-container__slogan {
-        color: var(--main-contrast-color);
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+.social-net-container__slogan,
+.subscribe-container__slogan {
+    color: var(--main-contrast-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-        text-align: center;
+    text-align: center;
 }
-    
+
 .social-net {
-        display: block;
-        display: flex;
-        margin-top: 20px;
-    }
+    display: block;
+    display: flex;
+    margin-top: 20px;
+}
 
 .social-net__item:not(:last-child) {
-        margin-right: 10px;
-    }
-
-.social-net__link {
-        background-color: var(--social-network-bgc);
-        padding: 0;
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        border: none;
-        cursor: pointer;
-        display: block;
-        display: flex;
-        
-        transition: background-color 250ms var(--timing-function);
-
-        &:hover,
-        &:focus {
-            background-color: var(--main-active-color);
-        }
+    margin-right: 10px;
 }
 
-    .social-net__icon {
-        fill: var(--main-contrast-color);
-        margin: auto auto;
+.social-net__link {
+    background-color: var(--social-network-bgc);
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--main-active-color);
+    }
+}
+
+.social-net__icon {
+    fill: var(--main-contrast-color);
+   
 }
 
 .subscribe-container {
-        display: block;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .subscribe-wrapper {
-        margin-top: 20px;
-        width: 100%;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .user-email-wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-    .user-email-wrapper__icon {
-        fill: var(--main-contrast-color);
-        margin-left: 10px;
-        height: 24px;
-        width: 24px;
- }
-
-    .user-email-wrapper__input {
-        width: 100%;
-        height: 50px;
-        border: 1px solid var(--user-mail-input-border);
-        box-sizing: border-box;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
-
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.03em;
-        color: var(--footer-mail-tel-color);
-        background-color: #2F303A;
-        padding-left: 16px;
-        margin-bottom: 20px;
+.user-email-wrapper__icon {
+    fill: var(--main-contrast-color);
+    margin-left: 10px;
+    height: 24px;
+    width: 24px;
 }
 
-    .user-email-wrapper__input::placeholder {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.03em;
-        color: var(--footer-mail-tel-color);
-
-}
-
-    .user-email-wrapper__btn{
-        width: 200px;
-        height: 50px;
-        margin-right: auto;
-        margin-left: auto;
-}
-
-@media screen and (min-width: 480px){
 .user-email-wrapper__input {
-    width: 450px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--user-mail-input-border);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--footer-mail-tel-color);
+    background-color: #2F303A;
+    padding-left: 16px;
+    margin-bottom: 20px;
 }
+
+.user-email-wrapper__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--footer-mail-tel-color);
+
+}
+
+.user-email-wrapper__btn {
+    width: 200px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 480px) {
+    .user-email-wrapper__input {
+        width: 450px;
+    }
 }
 
 // Планшетна версія
 
-@media screen and (min-width: 767.99px){
-    .container-tablet{
+@media screen and (min-width: 767.99px) {
+    .container-tablet {
         display: flex;
         flex-direction: row;
         align-items: baseline;
@@ -180,18 +181,20 @@
 
         margin-bottom: 60px;
     }
-    .address-container{
+
+    .address-container {
         margin-bottom: 0;
         // margin-right: 165px;
 
 
     }
-    .social-net-container{
+
+    .social-net-container {
         margin-bottom: 0;
-           
+
     }
 
-    .subscribe-wrapper{
+    .subscribe-wrapper {
         display: flex;
         justify-content: center;
     }
@@ -200,55 +203,55 @@
 
 // Десктопна версія
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
 
     .footer__container {
-            display: flex;
-            flex-direction: row;
-            text-align: left;
-           align-items: flex-start;
-           align-items: baseline;
-        }
-        .container-tablet{
-            margin-bottom: 0;
-        }
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+        align-items: baseline;
+    }
 
-        .address-container{
-            margin-right: 70px;
-            margin-bottom: 0;
-        }
-     
-        .social-net-container {
-             margin-top: 12px;
-             margin-bottom: 0;
-        }
+    .container-tablet {
+        margin-bottom: 0;
+    }
 
-        .social-net-container__slogan,
-        .subscribe-container__slogan{
-            text-align: left;
-        }
-                  
-        .subscribe-container {
-           margin-left: 93px;
-           margin-top: 12px;
-        }
-    
-        .subscribe-wrapper {
-            display: flex;
-            justify-content: flex-start;
-        }
-    
-        .user-email-wrapper {
-            display: flex;
-            flex-direction: row;
-        }
+    .address-container {
+        margin-right: 70px;
+        margin-bottom: 0;
+    }
 
-        .user-email-wrapper__input{
-            margin-right: 12px;
-            width: 358px;
-        }
-      
-    
+    .social-net-container {
+        margin-top: 12px;
+        margin-bottom: 0;
+    }
+
+    .social-net-container__slogan,
+    .subscribe-container__slogan {
+        text-align: left;
+    }
+
+    .subscribe-container {
+        margin-left: 93px;
+        margin-top: 12px;
+    }
+
+    .subscribe-wrapper {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .user-email-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .user-email-wrapper__input {
+        margin-right: 12px;
+        width: 358px;
+    }
+
+
 }
-
 
