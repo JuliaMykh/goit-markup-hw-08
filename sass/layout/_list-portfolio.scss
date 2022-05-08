@@ -24,9 +24,25 @@
     margin-bottom: 30px;
 }
 
+.portfolio-list__item{
+    transition: box-shadow 250ms var(--timing-function);
+
+    &:hover{
+        box-shadow: var(--portfolio-cards-shadow);
+    }
+    .card-set__link:focus & {
+        box-shadow: var(--portfolio-cards-shadow);
+    }
+}
+
+
+
 .overlay-p {
     position: relative;
     overflow: hidden;
+    overflow: scroll;
+
+    
 }
 
 .overlay-p__container {
@@ -66,7 +82,7 @@
 
 // Планшетна версія
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 767.99px){
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
@@ -83,16 +99,13 @@
         margin-top: 30px;
         flex-basis: calc(100% / 2 - 30px);
 
-        &:hover {
-            box-shadow: var(--portfolio-cards-shadow);
-        }
     }
 
 }
 
 // Десктопна версія
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1199.99px){
     
 .portfolio-list__item{
     flex-basis: calc(100% / 3 - 30px);

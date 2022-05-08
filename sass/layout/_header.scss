@@ -209,6 +209,7 @@
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--header-color);
+        transition: color 250ms var(--timing-function);
 
         &:hover, &:focus{
             color: var(--main-active-color);
@@ -248,6 +249,7 @@
         line-height: 1.67px;  
         letter-spacing: 0.02em;
         color: var(--text-color);
+        transition: color 250ms var(--timing-function);
 
         &:hover, &:focus{
             color: var(--main-active-color);
@@ -283,7 +285,7 @@
         .contacts__icon--smartphone {
                 margin-right: 8px;
                 fill: currentColor;
-                transition: background-color 250ms var(--timing-function);
+                transition: color 250ms var(--timing-function);
             }
 
 }
