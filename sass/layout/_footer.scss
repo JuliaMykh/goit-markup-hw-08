@@ -177,18 +177,17 @@
 @media screen and (min-width: 767.99px) {
     .container-tablet {
         display: flex;
+        width: 100%;
         flex-direction: row;
         align-items: baseline;
-        justify-content: space-between;
+        justify-content: space-around;
 
         margin-bottom: 60px;
     }
 
     .address-container {
         margin-bottom: 0;
-        // margin-right: 165px;
-
-
+        
     }
 
     .social-net-container {

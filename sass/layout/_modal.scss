@@ -9,6 +9,8 @@
     width: 100%;
     height: 100%;
     background-color: var(--background-modal-color);
+
+    
 }
 
 .is-hidden {
@@ -24,7 +26,7 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--timing-function);
 
-    width: 450px;
+    width: 98%;
     height: 609px;
     background-color: var(--main-contrast-color);
 
@@ -96,7 +98,7 @@
 }
 .form__comments {
     resize: none;
-    width: 370px;
+    width: 100%;
     height: 120px;
     border: 1px solid var(--border-modal-input-color);
     box-sizing: border-box;
@@ -144,6 +146,11 @@
         margin-right: 8px;
         
     }
+
+        .checkbox__input:checked+&::before {
+            border: none;
+            background-image: url(../images/check.svg);
+        }
 }
 
 .checkbox__link {
@@ -157,15 +164,12 @@
 
 .button-modal {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 8px;
+    right: 8px;
     display: block;
     display: flex;
-
     padding: 0;
-    margin-top: 8px;
-    margin-right: 8px;
-
+   
     background-color: var(--main-contrast-color);
     width: 30px;
     height: 30px;
@@ -187,8 +191,6 @@
         fill: var(--main-active-color);
     }
 }
-
-
 
 // Десктопна  версія
 
